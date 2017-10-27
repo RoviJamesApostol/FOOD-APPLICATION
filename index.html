@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function pancit() {
+    if(typeof(Storage) !== "undefined") {
+        if (localStorage.pancit) {
+            localStorage.pancit = Number(localStorage.pancit)+1;
+        } else {
+            localStorage.pancit = 1;
+        }
+        document.getElementById("result1").innerHTML = "You order " + localStorage.pancit + "pcs pancit.";
+    }
+}
+function sphagetti() {
+    if(typeof(Storage) !== "undefined") {
+        if (localStorage.sphagetti) {
+            localStorage.sphagetti = Number(localStorage.sphagetti)+1;
+        } else {
+            localStorage.sphagetti = 1;
+        }
+        document.getElementById("result2").innerHTML = "You order " + localStorage.sphagetti + "pcs sphagetti.";
+    }
+}
+function carvonara() {
+    if(typeof(Storage) !== "undefined") {
+        if (localStorage.carvonara) {
+            localStorage.carvonara = Number(localStorage.carvonara)+1;
+        } else {
+            localStorage.carvonara = 1;
+        }
+        document.getElementById("result3").innerHTML = "You order " + localStorage.carvonara + "pcs carvonara.";
+    }
+}
+function sopas() {
+    if(typeof(Storage) !== "undefined") {
+        if (localStorage.sopas) {
+            localStorage.sopas = Number(localStorage.sopas)+1;
+        } else {
+            localStorage.sopas = 1;
+        }
+        document.getElementById("result4").innerHTML = "You order " + localStorage.sopas + "pcs spicy sopas.";
+    }
+}
+function tea() {
+    if(typeof(Storage) !== "undefined") {
+        if (localStorage.tea) {
+            localStorage.tea = Number(localStorage.tea)+1;
+        } else {
+            localStorage.tea = 1;
+        }
+        document.getElementById("result5").innerHTML = "You order " + localStorage.tea + "pcs tea.";
+    }
+}
+function buko() {
+    if(typeof(Storage) !== "undefined") {
+        if (localStorage.buko) {
+            localStorage.buko = Number(localStorage.buko)+1;
+        } else {
+            localStorage.buko = 1;
+        }
+        document.getElementById("result6").innerHTML = "You order " + localStorage.buko + "pcs buko juice.";
+    }
+}
+function coke() {
+    if(typeof(Storage) !== "undefined") {
+        if (localStorage.coke) {
+            localStorage.coke = Number(localStorage.coke)+1;
+        } else {
+            localStorage.coke = 1;
+        }
+        document.getElementById("result7").innerHTML = "You order " + localStorage.coke + "pcs cold coke.";
+    }
+}
+</script>
+</head>
+<body style="color: blue; background-color: gold; font-size:15px;">
+<form>
+<B>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>JAMES RESTO BAR</u><B><br>
+<B>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>MAIN MENU</u><B><br>
+<ul>
+<li><b>PANCIT BIHON<B>&nbsp;&nbsp;&nbsp;&nbsp;<button onclick="pancit()" type="button" autofocus="autofucos"><B>10$<B></button><br>
+<li><b>SPHAGETTI<b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button onclick="sphagetti()" type="button" autofocus="autofucos"><B>15$<B></button><br>
+<li><b>CARVONARA<b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button onclick="carvonara()" type="button" autofocus="autofucos"><B>15$<B></button><br>
+<li><b>SPICY SOPAS<b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button onclick="sopas()" type="button" autofocus="autofucos"><B>30$<B>
+</button><br>
+<B>&nbsp;&nbsp;&nbsp;&nbsp;<u>DRINKS</u><B><br>
+<li><b>ICE TEA<b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button onclick="tea()" type="button" autofocus="autofucos"><B>30$<B>
+</button><br>
+<li><b>BUKO JUICE<b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button onclick="buko()" type="button" autofocus="autofucos"><B>30$<B>
+</button><br>
+<li><b>COLD COKE<b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button onclick="coke()" type="button" autofocus="autofucos"><B>30$<B>
+</button><br>
+
+</ul>
+</form>
+
+<div id="result1"></div>
+<div id="result2"></div>
+<div id="result3"></div>
+<div id="result4"></div>
+<div id="result5"></div>
+<div id="result6"></div>
+<div id="result7"></div>
+</body>
+</html>
